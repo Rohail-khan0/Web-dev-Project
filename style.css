@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    background: url(image.jpg);
+    height: 95vh;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+.name{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 7rem;
+}
+.name h1{
+    text-transform: uppercase;
+}
+.lg-text{
+    font-size: 60px;
+}
+
+.box{
+    background-color: #000;
+    padding: 30px;
+    color: white;
+
+}
+.box h2{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.box span{
+    font-size: 4.5rem;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+.card{
+    max-width: 320px;
+    height: 400px;
+    box-shadow: 3px 5px 5px rgb(1,1,1,0.2);
+    margin:25px 0;
+    transition: 0.3s ease-in-out;
+}
+.card img{
+    max-width: 320px;
+    
+}
+.grid-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{
+    text-align: justify;
+    padding: 15px;
+}
+.card-content h3{
+    padding: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.last{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.contact{
+    background: #383859;
+    padding: 50px;
+    color: rgba(255, 255, 255, 0.856);
+}
+.contact h2{
+    margin: 10px;
+}
+.about{
+    background: #534f4f;
+    padding: 50px;
+    color: rgba(255, 255, 255, 0.79);
+}
+.about h2{
+    margin: 10px;
+}
+.end{
+    background: #000;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .header{
+        height: 50vh;
+        padding-left: 30px;
+    }
+    h2 span{
+        font-size: 16px;
+    }
+    .name h1{
+        font-size: 32px;
+    }
+    .box h2{
+        font-size: 24px;
+    }
+    .box span{
+        font-size: 40px;
+    }
+    
+}
+@media(min-width:501px) and (max-width:700px){
+    .header{
+        height: 50vh;
+        padding-left: 30px;
+    }
+    .name h1{
+        font-size: 50px;
+    }
+    .box h2{
+        font-size: 30px;
+    }
+    .box span{
+        font-size: 60px;
+    }
+
+}
